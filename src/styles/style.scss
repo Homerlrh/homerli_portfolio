@@ -1,0 +1,92 @@
+$baseColor: #162c3a;
+$secondColor: #e7bd70;
+$thirdColor: #c4c4c4;
+
+html,
+body {
+	background-color: $baseColor;
+	margin: 0;
+	height: 100%;
+}
+
+.headTitle {
+	color: #fff;
+	font-family: Lora;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	max-width: 1024px;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+
+	ol,
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: flex;
+		padding: 20px 0 20px;
+	}
+
+	a {
+		font-family: Lora;
+		text-decoration: none;
+		position: relative;
+		display: block;
+		padding: 16px 0;
+		margin: 0 12px;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		transition: color 0.1s, background-color 0.1s;
+		color: #fff;
+	}
+	a:hover {
+		color: $secondColor;
+	}
+	a:focus,
+	a:active {
+		color: $secondColor;
+	}
+
+	a::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 100%;
+		height: 3px;
+		width: 100%;
+		background-color: $secondColor;
+		-webkit-transform-origin: center top;
+		transform-origin: center top;
+		-webkit-transform: scale(0, 1);
+		transform: scale(0, 1);
+		transition: color 0.1s, -webkit-transform 0.2s ease-out;
+		transition: color 0.1s, transform 0.2s ease-out;
+		transition: color 0.1s, transform 0.2s ease-out,
+			-webkit-transform 0.2s ease-out;
+	}
+
+	a:active::before {
+		background-color: $secondColor;
+	}
+
+	a:hover::before,
+	a:focus::before {
+		-webkit-transform-origin: center top;
+		transform-origin: center top;
+		-webkit-transform: scale(1, 1);
+		transform: scale(1, 1);
+	}
+}
+
+.inNav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
