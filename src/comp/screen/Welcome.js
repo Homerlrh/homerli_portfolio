@@ -1,28 +1,25 @@
 import React from "react";
 import logo from "../../image/logo/logo1.png";
-
-const links = [
-	{ name: "about me", path: "/aboutMe" },
-	{ name: "skills", path: "/skills" },
-	{ name: "project", path: "/projects" },
-	{ name: "contact", path: "/contact" },
-];
-
-const linkComponent = links.map((link) => (
-	<li key={link.name}>
-		<a href={link.path}>{link.name}</a>
-	</li>
-));
+import Links from "../links/Links";
+import { Fade, Zoom } from "react-reveal";
 
 export default function Welcome() {
+	const pageName = "home";
 	return (
 		<div className="main">
 			<h1 className="headTitle">
-				Homer li <span>- a full stack/backend developer</span>
+				<Zoom top cascade>
+					Homer li
+					<Zoom top cascade>
+						<span>- a full stack/backend developer</span>
+					</Zoom>
+				</Zoom>
 			</h1>
 			<div className="inNav">
-				<img src={logo} alt="logo" width="45%" />
-				<ul>{linkComponent}</ul>
+				<Fade left>
+					<img src={logo} alt="logo" width="45%" />
+				</Fade>
+				<Links page={pageName} />
 			</div>
 		</div>
 	);
