@@ -10,7 +10,12 @@ const SkillGroup = skillArray.map((skill, index) => (
 				<h2>{skill.name}</h2>
 				<div className="logoGroup">
 					{skill.images.map((image) => (
-						<img className="logo" src={image.default} alt="logo" />
+						<img
+							key={image.default}
+							className="logo"
+							src={image.default}
+							alt="logo"
+						/>
 					))}
 				</div>
 			</div>

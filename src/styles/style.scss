@@ -9,6 +9,10 @@ body {
 	height: 100%;
 }
 
+p {
+	font-family: Merriweather;
+}
+
 .headTitle {
 	color: #fff;
 	font-family: Lora;
@@ -82,6 +86,11 @@ body {
 		transform-origin: center top;
 		-webkit-transform: scale(1, 1);
 		transform: scale(1, 1);
+	}
+
+	h1 {
+		color: #fff;
+		font-family: Lora;
 	}
 }
 
@@ -181,4 +190,120 @@ body {
 .logo {
 	min-width: 5rem;
 	max-width: 6rem;
+}
+
+.projectGroup {
+	width: 80%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	row-gap: 10px;
+}
+
+.container {
+	background-color: $thirdColor;
+	box-sizing: border-box;
+	width: 80%;
+	padding: 10px;
+	border-radius: 15px;
+	position: relative;
+	cursor: pointer;
+}
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: $secondColor !important;
+	overflow: hidden;
+	width: 100% !important;
+	height: 0;
+	transition: 0.5s ease;
+	border-radius: 15px;
+}
+
+.container:hover .overlay {
+	height: 100% !important;
+}
+
+.projectR {
+	display: flex;
+	flex-direction: row;
+	a {
+		transition: ease-in-out 0.6s;
+		color: #000;
+		font-size: 30px;
+	}
+	a:hover {
+		color: #fff;
+	}
+}
+.projectDetail {
+	box-sizing: border-box;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.projectDescription {
+	color: #000;
+	p {
+		font-family: merriweather;
+	}
+}
+
+.emailGroup {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	div {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		label {
+			color: #fff;
+			font-family: "Lora";
+			font-size: 1.3rem;
+		}
+		textarea,
+		input {
+			font-size: 15px;
+			padding: 5px 0 5px 10px;
+			outline: none;
+			resize: none;
+			border-radius: 15px;
+		}
+	}
+	.demoBtn {
+		font-family: Lora;
+		font-size: 20px;
+		width: 120px;
+		height: 50px;
+		box-sizing: border-box;
+		padding: 5px;
+		border: none;
+		background-color: #c4c4c4;
+		outline: none;
+		cursor: pointer;
+		transition: ease-in-out 0.6s;
+		border-radius: 5px;
+	}
+
+	.demoBtn:hover {
+		background-color: #e7bd70;
+		color: #fff;
+		box-shadow: 5px 10px 8px #888888;
+	}
+}
+
+.contactGroup {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	a {
+		color: $secondColor;
+		font-size: 2rem;
+	}
 }
