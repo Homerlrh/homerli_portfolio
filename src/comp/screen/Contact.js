@@ -2,12 +2,7 @@ import React from "react";
 import Links from "../links/Links";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faGithub,
-	faLinkedin,
-	faFacebookSquare,
-	faInstagramSquare,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
 	const handleEmail = (e) => {
@@ -33,7 +28,7 @@ export default function Contact() {
 		<div className="main">
 			<h1>Contact Me</h1>
 			<div style={{ width: "100%", display: "flex", flexDirection: "row" }}>
-				<div style={{ width: "60%" }}>
+				<div className="emailContainer">
 					<form className="emailGroup" onSubmit={handleEmail}>
 						<div>
 							<label>Subject: </label>

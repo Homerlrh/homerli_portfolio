@@ -27,7 +27,10 @@ export default function Skills() {
 	return (
 		<div className="main" style={{ minWidth: "90%", flexDirection: "row" }}>
 			<div className="skills">{SkillGroup}</div>
-			<Links page="skills" />
+
+			<div>
+				<Links page="skills" />
+			</div>
 		</div>
 	);
 }

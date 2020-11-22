@@ -24,7 +24,7 @@ export default function Links({ page }) {
 
 	return (
 		<Fade right cascade>
-			<ul>{linkComponent}</ul>
+			<ul className="snav">{linkComponent}</ul>
 		</Fade>
 	);
 }

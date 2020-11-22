@@ -15,7 +15,7 @@ export default function Welcome() {
 					</Zoom>
 				</Zoom>
 			</h1>
-			<div className="inNav">
+			<div className="inNav" style={{ alignItems: "center" }}>
 				<Fade left>
 					<img src={logo} alt="logo" width="45%" />
 				</Fade>

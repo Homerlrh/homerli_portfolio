@@ -11,7 +11,7 @@ export default function Aboutme() {
 					<img src={pic} alt="logo" className="profilePic" />
 				</div>
 			</Flip>
-			<div className="inNav" style={{ width: "60%", alignItems: "flex-start" }}>
+			<div className="inNav">
 				<Fade left>
 					<div className="selfIntro">
 						<h2>
