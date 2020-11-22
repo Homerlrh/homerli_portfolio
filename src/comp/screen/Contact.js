@@ -86,12 +86,6 @@ export default function Contact() {
 				<a href="www.linkedin.com/in/homer-juniordev">
 					<FontAwesomeIcon icon={faLinkedin} />
 				</a>
-				<a href="https://www.facebook.com/homer.lee">
-					<FontAwesomeIcon icon={faFacebookSquare} />
-				</a>
-				<a href="https://www.instagram.com/mr.leeeerh/">
-					<FontAwesomeIcon icon={faInstagramSquare} />
-				</a>
 			</div>
 		</div>
 	);
